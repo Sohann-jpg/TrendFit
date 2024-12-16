@@ -1,0 +1,115 @@
+[
+    {
+      "id": 1,
+      "name": "Autumn and Winter hoodie",
+      "category": "mens hoodies-sweatshirts",
+      "price": 29.99,
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Red", "Black", "White", "Blue"],
+      "image": "images/grey-hoodie-men.jpg"
+    },
+    {
+      "id": 2,
+      "name": "White Sneakers",
+      "category": "womens sneakers",
+      "price": 49.99,
+      "sizes": ["6", "7", "8", "9"],
+      "colors": ["Blue", "White"],
+      "image": "images/white-sneaker-women.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Slim-fit Denim",
+      "category": "denim bottoms",
+      "price": 39.99,
+      "sizes": ["28", "30", "32", "34"],
+      "colors": ["Black", "Gray"],
+      "image": "images/black-denim-men.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Corduroy ankle-tied sweatpants",
+        "category": "mens bottoms",
+        "price": 29.99,
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["Brown", "Black", "Blue"],
+        "color_images": {
+          "Blue": "images/Corduroy-pants-blue.jpg",
+          "Brown": "images/Corduroy-pants-brown.jpg",
+          "Black": "images/Corduroy-pants-black.jpg"
+        },
+        "image": "images/Corduroy-pants-black.jpg"  
+      },
+      {
+        "id": 5,
+        "name": "Round neck sweater",
+        "category": "mens sweater",
+        "price": 29.99,
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["Black", "Blue", "Brown", "Green", "White"],
+        "color_images": {
+          "Black": "images/Round-Neck-Sweater-Black.jpg",
+          "Blue": "images/Round-Neck-Sweater-Blue.jpg",
+          "Brown": "images/Round-Neck-Sweater-Brown.jpg",
+          "Green": "images/Round-Neck-Sweater-Green.jpg",
+          "White": "images/Round-Neck-Sweater-Off-White.jpg"
+        },
+        "image": "images/Round-Neck-Sweater-Black.jpg"  
+      },
+      {
+        "id": 6,
+        "name": "Knitted cardigan",
+        "category": "mens sweater",
+        "price": 29.99,
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["Black", "White", "Green"],
+        "color_images": {
+          "Black": "images/Knitted-Cardigan-Black.jpg",
+          "Green": "images/Knitted-Cardigan-Green.jpg",
+          "White": "images/Knitted-Cardigan-White.jpg"
+        },
+        "image": "images/Knitted-Cardigan-Black.jpg"  
+      },
+      {
+        "id": 7,
+        "name": "Timberland boots",
+        "category": "mens boots",
+        "price": 50,
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["Black", "Yellow"],
+        "color_images": {
+          "Black": "images/Timberland-boots-black.jpg",
+          "Yellow": "images/Timberland-boots-yellow.jpg"
+        },
+        "image": "images/Timberland-boots.jpg"  
+      },
+      {
+        "id": 8,
+        "name": "Cotton padded winter jacket",
+        "category": "mens hoodies-sweatshirts tops", 
+        "price": 50,
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["Black", "White"],
+        "color_images": {
+          "Black": "images/Cotton-padded-winter-jacket-black.jpg",
+          "White": "images/Cotton-padded-winter-jacket-white.jpg"
+        },
+        "image": "images/Cotton-padded-winter-jacket-black.jpg"  
+      },
+      {
+        "id": 9,
+        "name": "Russian unisex down jacket",
+        "category": "mens womens tops", 
+        "price": 50,
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["Black", "Red", "White"],
+        "color_images": {
+          "Black": "images/Russian-Down-Jacket-Black.jpg",
+          "White": "images/Russian-Down-Jacket-White.jpg",
+          "Red": "images/Russian-Down-Jacket-Red.jpg"
+
+        },
+        "image": "images/Russian-Down-Jacket-Black.jpg"  
+      }
+  ]
+  

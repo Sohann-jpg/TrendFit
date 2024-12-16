@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Clothing Store</h1>
+    <input type="text" id="search" placeholder="Search categories...">
+  </header>
+
+  <!-- Sidebar Filters -->
+  <aside>
+    <h3>Filter by Category</h3>
+    <h4>General Categories</h4>
+    <label><input type="checkbox" value="mens" class="filter"> Men's</label>
+    <label><input type="checkbox" value="womens" class="filter"> Women's</label>
+
+    <h4>Clothing Categories</h4>
+    <label><input type="checkbox" value="tops" class="filter"> Tops</label>
+    <label><input type="checkbox" value="bottoms" class="filter"> Bottoms</label>
+    <label><input type="checkbox" value="hoodies-sweatshirts" class="filter"> Hoodies and Sweatshirts</label>
+    <label><input type="checkbox" value="denim" class="filter"> Denim</label>
+    <label><input type="checkbox" value="sweater" class="filter"> Sweater</label>
+
+    <h4>Shoes</h4>
+    <label><input type="checkbox" value="sneakers" class="filter"> Sneakers</label>
+    <label><input type="checkbox" value="work-shoes" class="filter"> Work Shoes</label>
+    <label><input type="checkbox" value="boots" class="filter"> Boots</label>
+    <label><input type="checkbox" value="winter-boots" class="filter"> Winter Boots</label>
+    <label><input type="checkbox" value="casual" class="filter"> Casual</label>
+
+    <h4>Accessories</h4>
+    <label><input type="checkbox" value="accessories-jewelries" class="filter"> Accessories and Jewelries</label>
+  </aside>
+
+  <!-- Product Grid Section -->
+  <main id="products" class="product-grid">
+    <!-- Products will be dynamically added here -->
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Clothing Store</p>
+  </footer>
+
+  <!-- Dynamic Product Rendering Script -->
+  <script>
+    async function fetchProducts() {
+      const response = await fetch("products.json");
+      const products = await response.json();
+      const productContainer = document.getElementById("products");
+
+      // Clear any existing content
+      productContainer.innerHTML = "";
+
+      // Render products
+      products.forEach((product) => {
+        const productDiv = document.createElement("div");
+        productDiv.classList.add("product");
+        productDiv.innerHTML = `
+          <a href="product.html?id=${product.id}" style="text-decoration: none; color: inherit;">
+            <img src="${product.image}" alt="${product.name}">
+            <div class="discount">-${product.discountRate}%</div>
+            <h2>${product.name}</h2>
+            <p class="best-seller">#1 Best Seller</p>
+            <p class="price">CA$${product.price}</p>
+            <div class="bottom-details">
+              <p class="sold">${product.soldCount}+ sold</p>
+              <span class="cart-icon">🛒</span>
+            </div>
+          </a>
+        `;
+        productContainer.appendChild(productDiv);
+      });
+    }
+
+    fetchProducts();
+  </script>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

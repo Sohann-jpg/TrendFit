@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById("filter-toggle");
+    const filterContent = document.getElementById("filter-content");
+  
+    // Toggle visibility on button click
+    toggleButton.addEventListener("click", () => {
+      filterContent.classList.toggle("open");
+      toggleButton.classList.toggle("open");
+    });
+  });
+
 let products = []; // Array to hold product data
 
 const productContainer = document.getElementById("products");

@@ -1,42 +1,41 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas:
-      "header header"
-      "aside main"
-      "footer footer";
-  }
-  
-  header {
-    grid-area: header;
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-  }
-  
-  header input {
-    margin-top: 0.5em;
-    padding: 0.5em;
-    width: 80%;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+}
 
-  h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  /* Product Grid */
+/* Header Styling */
+header {
+  grid-area: header;
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+}
+
+header input {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Product Grid */
 main.product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 10px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -56,13 +55,12 @@ main.product-grid {
 
 .product img {
   width: 100%;
-  height: 250px;
+  height: auto;
   object-fit: cover;
 }
 
-/* Product Details */
 .product h2 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin: 10px;
   color: #333;
@@ -73,13 +71,13 @@ main.product-grid {
 }
 
 .product p {
-  font-size: 14px;
+  font-size: 12px;
   margin: 5px 10px;
   color: #888;
 }
 
 .product .price {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #ff5722;
   margin: 5px 10px;
@@ -93,7 +91,7 @@ main.product-grid {
   margin: 0 10px 5px 10px;
 }
 
-/* "Best Seller" Label */
+/* Best Seller Label */
 .product .best-seller {
   font-size: 12px;
   font-weight: bold;
@@ -101,7 +99,6 @@ main.product-grid {
   margin-left: 10px;
 }
 
-/* Bottom Details */
 .product .bottom-details {
   display: flex;
   justify-content: space-between;
@@ -123,101 +120,148 @@ main.product-grid {
 .product .cart-icon:hover {
   color: #ff5722;
 }
-  
-  /* aside {
-    grid-area: aside;
-    padding: 1em;
-    background-color: #f4f4f4;
-  } */
-  
-  main {
-    grid-area: main;
-    padding: 1em;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1em;
-  }
-  
-  main .product {
-    border: 1px solid #ddd;
-    padding: 1em;
-    text-align: center;
-  }
-  
-  footer {
-    grid-area: footer;
-    padding: 1em;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-  }
-/* Container styling */
+
+/* Sidebar Filters */
 aside {
-  background-color: #f8f9fa; /* Light gray background */
-  padding: 20px;
+  background-color: #f8f9fa;
+  padding: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-family: Arial, sans-serif;
-  width: 250px;
 }
 
 aside h3 {
-  font-size: 18px;
+  font-size: 16px;
   color: #333;
   margin-bottom: 10px;
-}
-
-aside h4 {
-  font-size: 16px;
-  color: #555;
-  margin-top: 15px;
-  margin-bottom: 8px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
 }
 
 aside label {
   display: flex;
   align-items: center;
-  margin: 8px 0;
-  font-size: 14px;
+  margin: 5px 0;
+  font-size: 12px;
   color: #333;
-  cursor: pointer;
 }
 
-/* Custom Checkboxes */
 aside input[type="checkbox"] {
-  -webkit-appearance: none; /* Remove default checkbox */
-  appearance: none;
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  width: 15px;
+  height: 15px;
 }
 
-aside input[type="checkbox"]:checked {
-  background-color: #28a745; /* Green check color */
-  border-color: #28a745;
-}
-
-aside input[type="checkbox"]:checked::after {
-  content: "✔";
+/* Footer Styling */
+footer {
+  grid-area: footer;
+  padding: 1em;
+  background-color: #333;
   color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  display: block;
   text-align: center;
 }
 
-/* Hover effect on labels */
-aside label:hover input[type="checkbox"] {
-  border-color: #28a745;
+footer p {
+  margin: 0;
 }
 
-aside label:hover {
-  color: #28a745;
-}  
+.filter-toggle {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+}
+
+.filter-toggle:after {
+  content: " ▼"; /* Default down arrow */
+  font-weight: bold;
+}
+
+.filter-toggle.open:after {
+  content: " ▲"; /* Up arrow when open */
+}
+
+/* Collapsible Filter Content */
+.filter-content {
+  display: block;
+}
+
+/* Responsive Media Queries */
+
+/* Mobile First: Adjust Layout */
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+  }
+
+  header {
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  header input {
+    width: 90%;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border-radius: 4px;
+  }
+
+  /* Move Filter (aside) to the Top */
+  aside {
+    padding: 10px;
+  }
+
+  .filter-toggle {
+    display: block; /* Show toggle button only on mobile */
+  }
+
+  .filter-content {
+    display: none; /* Hide filter content by default */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .filter-content.open {
+    display: block; /* Show when toggled */
+  }
+
+  /* Adjust product grid */
+  main.product-grid {
+    grid-area: main;
+    grid-template-columns: repeat(2, 1fr); /* Two products per row */
+    gap: 10px;
+  }
+
+  .product img {
+    height: 200px;
+  }
+
+  footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 12px;
+    padding: 0.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust for small phones */
+  main.product-grid {
+    grid-template-columns: 1fr; /* Single column for products */
+  }
+
+  .product img {
+    height: 180px; /* Smaller height */
+  }
+}

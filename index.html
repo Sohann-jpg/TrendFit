@@ -15,28 +15,36 @@
 
   <!-- Sidebar Filters -->
   <aside>
-    <h3>Filter by Category</h3>
-    <h4>General Categories</h4>
-    <label><input type="checkbox" value="mens" class="filter"> Men's</label>
-    <label><input type="checkbox" value="womens" class="filter"> Women's</label>
-
-    <h4>Clothing Categories</h4>
-    <label><input type="checkbox" value="tops" class="filter"> Tops</label>
-    <label><input type="checkbox" value="bottoms" class="filter"> Bottoms</label>
-    <label><input type="checkbox" value="hoodies-sweatshirts" class="filter"> Hoodies and Sweatshirts</label>
-    <label><input type="checkbox" value="denim" class="filter"> Denim</label>
-    <label><input type="checkbox" value="sweater" class="filter"> Sweater</label>
-
-    <h4>Shoes</h4>
-    <label><input type="checkbox" value="sneakers" class="filter"> Sneakers</label>
-    <label><input type="checkbox" value="work-shoes" class="filter"> Work Shoes</label>
-    <label><input type="checkbox" value="boots" class="filter"> Boots</label>
-    <label><input type="checkbox" value="winter-boots" class="filter"> Winter Boots</label>
-    <label><input type="checkbox" value="casual" class="filter"> Casual</label>
-
-    <h4>Accessories</h4>
-    <label><input type="checkbox" value="accessories-jewelries" class="filter"> Accessories and Jewelries</label>
+    <!-- Toggle Button for Mobile -->
+    <button id="filter-toggle" class="filter-toggle">Filter by Category</button>
+  
+    <!-- Collapsible Filter Content -->
+    <div id="filter-content" class="filter-content">
+      <h3>Filter by Category</h3>
+  
+      <h4>General Categories</h4>
+      <label><input type="checkbox" value="mens" class="filter"> Men's</label>
+      <label><input type="checkbox" value="womens" class="filter"> Women's</label>
+  
+      <h4>Clothing Categories</h4>
+      <label><input type="checkbox" value="tops" class="filter"> Tops</label>
+      <label><input type="checkbox" value="bottoms" class="filter"> Bottoms</label>
+      <label><input type="checkbox" value="hoodies-sweatshirts" class="filter"> Hoodies and Sweatshirts</label>
+      <label><input type="checkbox" value="denim" class="filter"> Denim</label>
+      <label><input type="checkbox" value="sweater" class="filter"> Sweater</label>
+  
+      <h4>Shoes</h4>
+      <label><input type="checkbox" value="sneakers" class="filter"> Sneakers</label>
+      <label><input type="checkbox" value="work-shoes" class="filter"> Work Shoes</label>
+      <label><input type="checkbox" value="boots" class="filter"> Boots</label>
+      <label><input type="checkbox" value="winter-boots" class="filter"> Winter Boots</label>
+      <label><input type="checkbox" value="casual" class="filter"> Casual</label>
+  
+      <h4>Accessories</h4>
+      <label><input type="checkbox" value="accessories-jewelries" class="filter"> Accessories and Jewelries</label>
+    </div>
   </aside>
+  
 
   <!-- Product Grid Section -->
   <main id="products" class="product-grid">

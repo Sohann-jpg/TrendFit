@@ -45,8 +45,6 @@ function renderProducts(filteredProducts) {
         <img src="${product.image}" alt="${product.name}" style="width:100%; height:auto;">
         <h2>${product.name}</h2>
         <p>Price: $${product.price}</p>
-        <p>Sizes: ${product.sizes.join(", ")}</p>
-        <p>Colors: ${product.colors.join(", ")}</p>
       </a>
     `;
     productContainer.appendChild(productDiv);

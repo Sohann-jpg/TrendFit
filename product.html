@@ -6,12 +6,13 @@
   <title>Product Details</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Style for product details container */
+    /* Product Details Layout */
     #product-details {
       display: flex;
       flex-direction: row;
       gap: 2rem;
       padding: 2rem;
+      flex-wrap: wrap;
     }
 
     #product-image img {
@@ -27,27 +28,22 @@
       justify-content: flex-start;
     }
 
-    /* Colors Section */
+    /* Color Options */
     .color-option {
-        display: inline-block;
-        width: 30px; /* Circle size */
-        height: 30px;
-        border-radius: 50%; /* Makes it a circle */
-        margin: 5px;
-        border: 2px solid #ddd; /* Light border for contrast */
-        cursor: pointer;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin: 5px;
+      border: 2px solid #ddd;
+      cursor: pointer;
     }
 
-        .color-option.selected {
-        border: 2px solid #333; /* Highlight selected color */
+    .color-option.selected {
+      border: 2px solid #333;
     }
 
-        .color-option.invalid {
-        background-color: #ccc; /* Gray fallback for invalid colors */
-        cursor: not-allowed;
-    }
-
-    /* Sizes Section */
+    /* Size Options */
     .size-option {
       display: inline-block;
       padding: 8px 16px;
@@ -64,7 +60,7 @@
       color: #fff;
     }
 
-    /* Button Style */
+    /* Add to Cart Button */
     .add-to-cart {
       margin-top: 1rem;
       padding: 10px 20px;
@@ -84,10 +80,10 @@
   <main id="product-details">
     <!-- Product Image -->
     <div id="product-image">
-      <!-- Image will load here -->
+      <img id="main-image" src="" alt="Product Image">
     </div>
 
-    <!-- Product Info -->
+    <!-- Product Information -->
     <div id="product-info">
       <h2 id="product-name"></h2>
       <p id="product-price"></p>
@@ -104,8 +100,7 @@
         <div id="product-sizes"></div>
       </div>
 
-      <!-- Add to Cart -->
-      <!-- <button class="add-to-cart">Add to Cart</button> -->
+      <!-- Add to Cart Button -->
     </div>
   </main>
   <script src="product.js"></script>

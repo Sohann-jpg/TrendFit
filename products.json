@@ -1,30 +1,45 @@
 [
     {
       "id": 1,
-      "name": "Autumn and Winter hoodie",
+      "name": "Long-sleeve turtleneck",
       "category": "mens hoodies-sweatshirts",
-      "price": 29.99,
-      "sizes": ["S", "M", "L", "XL", "XXL"],
-      "colors": ["Red", "Black", "White", "Blue"],
-      "image": "images/grey-hoodie-men.jpg"
+      "price": 20,
+      "sizes": ["M", "L", "XL", "2XL", "3XL"],
+      "colors": ["Black", "White", "#3e5a6a"],
+      "color_images": {
+        "#3e5a6a": "images/Long-sleeve-turtleneck-blue.jpg",
+        "White": "images/Long-sleeve-turtleneck-white.jpg",
+        "Black": "images/Long-sleeve-turtleneck-black.jpg"
+      },
+      "image": "images/Long-sleeve-turtleneck-black.jpg"  
     },
     {
       "id": 2,
-      "name": "White Sneakers",
-      "category": "womens sneakers",
-      "price": 49.99,
-      "sizes": ["6", "7", "8", "9"],
-      "colors": ["Blue", "White"],
-      "image": "images/white-sneaker-women.jpg"
+      "name": "Cold-proof winter trousers",
+      "category": "bottoms",
+      "price": 20,
+      "sizes": ["M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+      "colors": ["#737781", "Black"],
+      "color_images": {
+        "#737781": "images/Winter-trouser-blue.jpg",
+        "Black": "images/Winter-trouser-black.jpg"
+      },
+      "image": "images/Winter-trouser-black.jpg"  
     },
     {
       "id": 3,
-      "name": "Slim-fit Denim",
-      "category": "denim bottoms",
-      "price": 39.99,
-      "sizes": ["28", "30", "32", "34"],
-      "colors": ["Black", "Gray"],
-      "image": "images/black-denim-men.jpg"
+      "name": "Winter Corduroy pants",
+      "category": "mens bottoms",
+      "price": 15.89,
+      "sizes": ["M", "L", "XL", "2XL", "3XL"],
+      "colors": ["#bdada1", "Black", "#817e81", "#3f424b"],
+      "color_images": {
+        "#bdada1": "images/Winter-Corduroy-pants-beige.jpg",
+        "Black": "images/Winter-Corduroy-pants-black.jpg",
+        "#817e81": "images/Winter-Corduroy-pants-grey.jpg",
+        "#3f424b": "images/Winter-Corduroy-pants-metallic.jpg"
+      },
+      "image": "images/Winter-Corduroy-pants-black.jpg" 
     },
     {
         "id": 4,
@@ -32,13 +47,13 @@
         "category": "mens bottoms",
         "price": 29.99,
         "sizes": ["S", "M", "L", "XL"],
-        "colors": ["Brown", "Black", "Blue"],
+        "colors": ["#2f221d", "Black", "#5b616d"],
         "color_images": {
-          "Blue": "images/Corduroy-pants-blue.jpg",
-          "Brown": "images/Corduroy-pants-brown.jpg",
+          "#5b616d": "images/Corduroy-pants-blue.jpg",
+          "#2f221d": "images/Corduroy-pants-brown.jpg",
           "Black": "images/Corduroy-pants-black.jpg"
         },
-        "image": "images/Corduroy-pants-black.jpg"  
+        "image": "images/Corduroy-pants-brown.jpg"  
       },
       {
         "id": 5,
@@ -46,13 +61,13 @@
         "category": "mens sweater",
         "price": 29.99,
         "sizes": ["S", "M", "L", "XL"],
-        "colors": ["Black", "Blue", "Brown", "Green", "White"],
+        "colors": ["Black", "#284171", "#44362c", "#6f7b60", "#afa3a7"],
         "color_images": {
           "Black": "images/Round-Neck-Sweater-Black.jpg",
-          "Blue": "images/Round-Neck-Sweater-Blue.jpg",
-          "Brown": "images/Round-Neck-Sweater-Brown.jpg",
-          "Green": "images/Round-Neck-Sweater-Green.jpg",
-          "White": "images/Round-Neck-Sweater-Off-White.jpg"
+          "#284171": "images/Round-Neck-Sweater-Blue.jpg",
+          "#44362c": "images/Round-Neck-Sweater-Brown.jpg",
+          "#6f7b60": "images/Round-Neck-Sweater-Green.jpg",
+          "#afa3a7": "images/Round-Neck-Sweater-Off-White.jpg"
         },
         "image": "images/Round-Neck-Sweater-Black.jpg"  
       },
@@ -62,31 +77,31 @@
         "category": "mens sweater",
         "price": 29.99,
         "sizes": ["S", "M", "L", "XL"],
-        "colors": ["Black", "White", "Green"],
+        "colors": ["Black", "#ebe0d0", "#a8a272"],
         "color_images": {
           "Black": "images/Knitted-Cardigan-Black.jpg",
-          "Green": "images/Knitted-Cardigan-Green.jpg",
-          "White": "images/Knitted-Cardigan-White.jpg"
+          "#a8a272": "images/Knitted-Cardigan-Green.jpg",
+          "#ebe0d0": "images/Knitted-Cardigan-White.jpg"
         },
         "image": "images/Knitted-Cardigan-Black.jpg"  
       },
       {
         "id": 7,
         "name": "Timberland boots",
-        "category": "mens boots",
+        "category": "shoes boots",
         "price": 50,
         "sizes": ["S", "M", "L", "XL"],
-        "colors": ["Black", "Yellow"],
+        "colors": ["Black", "#d58f37"],
         "color_images": {
           "Black": "images/Timberland-boots-black.jpg",
-          "Yellow": "images/Timberland-boots-yellow.jpg"
+          "#d58f37": "images/Timberland-boots-yellow.jpg"
         },
         "image": "images/Timberland-boots.jpg"  
       },
       {
         "id": 8,
         "name": "Cotton padded winter jacket",
-        "category": "mens hoodies-sweatshirts tops", 
+        "category": "mens jacket", 
         "price": 50,
         "sizes": ["S", "M", "L", "XL"],
         "colors": ["Black", "White"],
@@ -99,17 +114,59 @@
       {
         "id": 9,
         "name": "Russian unisex down jacket",
-        "category": "mens womens tops", 
+        "category": "mens womens jacket", 
         "price": 50,
         "sizes": ["S", "M", "L", "XL"],
-        "colors": ["Black", "Red", "White"],
+        "colors": ["Black", "#fb2263", "White"],
         "color_images": {
           "Black": "images/Russian-Down-Jacket-Black.jpg",
           "White": "images/Russian-Down-Jacket-White.jpg",
-          "Red": "images/Russian-Down-Jacket-Red.jpg"
+          "#fb2263": "images/Russian-Down-Jacket-Red.jpg"
 
         },
         "image": "images/Russian-Down-Jacket-Black.jpg"  
+      },
+      {
+        "id": 10,
+        "name": "European Plaid Jacket",
+        "category": "mens jacket", 
+        "price": 50,
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["Black", "#313a49", "#323a30", "#a1927d"],
+        "color_images": {
+          "Black": "images/European-Plaid-Jacket-Black.jpg",
+          "#313a49": "images/European-Plaid-Jacket-Blue.jpg",
+          "#323a30": "images/European-Plaid-Jacket-Green.jpg",
+          "#a1927d": "images/European-Plaid-Jacket-Khaki.jpg"
+        },
+        "image": "images/European-Plaid-Jacket-Black.jpg"  
+      },
+      {
+        "id": 11,
+        "name": "Skull print zip up hoodie",
+        "category": "mens hoodies-sweatshirts", 
+        "price": 50,
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["Black", "#473e35", "Off-White"],
+        "color_images": {
+          "Black": "images/Zip-up-hoodie-black-gray.jpg",
+          "#473e35": "images/Zip-up-hoodie-brown-white.jpg",
+          "Off-White": "images/Zip-up-hoodie-off-white.jpg"
+        },
+        "image": "images/Zip-up-hoodie-black-gray.jpg"  
+      },
+      {
+        "id": 12,
+        "name": "Non-slippery outdoor boots",
+        "category": "shoes boots", 
+        "price": 40,
+        "sizes": [39, 40, 41, 42, 43, 44, 45, 46],
+        "colors": ["Black", "#8f7149"],
+        "color_images": {
+          "Black": "images/Outdoor-Mountaineering-Boots-Black.jpg",
+          "#8f7149": "images/Outdoor-Mountaineering-Boots-Khaki.jpg"
+        },
+        "image": "images/Outdoor-Mountaineering-Boots-Khaki.jpg"  
       }
   ]
   

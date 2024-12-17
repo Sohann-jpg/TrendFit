@@ -167,6 +167,34 @@
           "#8f7149": "images/Outdoor-Mountaineering-Boots-Khaki.jpg"
         },
         "image": "images/Outdoor-Mountaineering-Boots-Khaki.jpg"  
+      },
+      {
+        "id": 13,
+        "name": "Loose-fit sports/casual pants",
+        "category": "bottoms", 
+        "price": 20,
+        "sizes": ["M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "colors": ["Black", "#454e55", "#bab1a8"],
+        "color_images": {
+          "Black": "images/Loose-Sports-Pants-Black.jpg",
+          "#454e55": "images/Loose-Sports-Pants-Navy-Blue.jpg",
+          "#bab1a8": "images/Loose-Sports-Pants-Off-White.jpg"
+        },
+        "image": "images/Loose-Sports-Pants-Black.jpg"  
+      },
+      {
+        "id": 14,
+        "name": "lightweight breathble woven work sneakers",
+        "category": "mens shoes", 
+        "price": 13.54,
+        "sizes": [39, 40, 41, 42, 43, 44],
+        "colors": ["Black", "#eae3ce", "White"],
+        "color_images": {
+          "Black": "images/lightweight-work-shoes-black.jpg",
+          "#eae3ce": "images/lightweight-work-shoes-beige.jpg",
+          "White": "images/lightweight-work-shoes-white.jpg"
+        },
+        "image": "images/lightweight-work-shoes-black.jpg"
       }
   ]
   

@@ -87,7 +87,7 @@
       },
       {
         "id": 7,
-        "name": "Timberland boots",
+        "name": "Non-slippery hard work boots",
         "category": "shoes boots",
         "price": 50,
         "sizes": ["S", "M", "L", "XL"],
@@ -195,6 +195,179 @@
           "White": "images/lightweight-work-shoes-white.jpg"
         },
         "image": "images/lightweight-work-shoes-black.jpg"
+      },
+      {
+        "id": 15,
+        "name": "Summer lightweight sneakers",
+        "category": "mens shoes sneakers", 
+        "price": 14.23,
+        "sizes": [39, 40, 41, 42, 43, 44],
+        "colors": ["Black", "#0d63b9", "White"],
+        "color_images": {
+          "Black": "images/Sneakers-Black.jpg",
+          "#0d63b9": "images/Sneakers-Blue.jpg",
+          "White": "images/Sneakers-White.jpg"
+        },
+        "image": "images/Sneakers-Black.jpg"
+      },
+      {
+        "id": 16,
+        "name": "Thick soled non-slip innerwear unisex slipper",
+        "category": "mens womens shoes", 
+        "price": 10,
+        "sizes": [40, 41, 42, 43, 44, 45],
+        "colors": ["Black", "White", "#e0d5d7", "#d7d4cd"],
+        "color_images": {
+          "Black": "images/Thick-soled-inner-slipper-black.jpg",
+          "White": "images/Thick-soled-inner-slipper-white.jpg",
+          "#e0d5d7": "images/Thick-soled-inner-slipper-pink.jpg",
+          "#d7d4cd": "images/Thick-soled-inner-slipper-khaki.jpg"
+        },
+        "image": "images/Thick-soled-inner-slipper-black.jpg"
+      },
+      {
+        "id": 17,
+        "name": "Comfortable ligtweight outdoors sneaker",
+        "category": "mens shoes sneakers", 
+        "price": 15,
+        "sizes": [39, 40, 41, 42, 43, 44],
+        "colors": ["Black", "#ce4b2a", "#a78753"],
+        "color_images": {
+          "Black": "images/Comfortable-lightweight-outdoors-sneakers-black.jpg",
+          "#ce4b2a": "images/Comfortable-lightweight-outdoors-sneakers-orange.jpg",
+          "#a78753": "images/Comfortable-lightweight-outdoors-sneakers-khaki.jpg"
+        },
+        "image": "images/Comfortable-lightweight-outdoors-sneakers-black.jpg"
+      },
+      {
+        "id": 18,
+        "name": "American loose-fit windproof cargo pants",
+        "category": "bottoms", 
+        "price": 18,
+        "sizes": ["S", "M", "L", "XL", "2XL"],
+        "colors": ["Black", "#555452"],
+        "color_images": {
+          "Black": "images/Loosefit-cargo-black.jpg",
+          "#555452": "images/Loosefit-cargo-grey.jpg"
+        },
+        "image": "images/Loosefit-cargo-black.jpg"
+      },
+      {
+        "id": 19,
+        "name": "American loose-fit windproof cargo pants",
+        "category": "bottoms", 
+        "price": 18,
+        "sizes": ["M", "L", "XL", "2XL", "3XL"],
+        "colors": ["Black", "#788996"],
+        "color_images": {
+          "Black": "images/American-retro-drape-loose-fit-denim-black.jpg",
+          "#788996": "images/American-retro-drape-loose-fit-denim-blue.jpg"
+        },
+        "image": "images/American-retro-drape-loose-fit-denim-main.jpg"
+      },
+      {
+        "id": 20,
+        "name": "Loose paratrooper breathable cargo pants",
+        "category": "womens bottoms", 
+        "price": 20,
+        "sizes": ["M", "L", "XL", "2XL"],
+        "colors": ["#2e2828", "#395f78", "#f4f3ef"],
+        "color_images": {
+          "#2e2828": "images/Loose-paratrooper-breathable-pants-black.jpg",
+          "#395f78": "images/Loose-paratrooper-breathable-pants-blue.jpg",
+          "#f4f3ef": "images/Loose-paratrooper-breathable-pants-white.jpg"
+
+        },
+        "image": "images/Loose-paratrooper-breathable-pants-white.jpg"
+      },
+      {
+        "id": 21,
+        "name": "Oversized black washed drop shoulder unisex T-Shirt",
+        "category": "mens womens tops", 
+        "price": 15,
+        "sizes": ["M", "L", "XL", "2XL"],
+        "colors": ["#63696f", "#313843", "#293959", "#827f78", "#d1cfca", "White"],
+        "color_images": {
+          "#63696f": "images/Oversized-drop-shoulder-dirty-washed-ash.jpg",
+          "#313843": "images/Oversized-drop-shoulder-dirty-washed-black.jpg",
+          "#293959": "images/Oversized-drop-shoulder-dirty-washed-blue.jpg",
+          "#827f78": "images/Oversized-drop-shoulder-dirty-washed-gray.jpg",
+          "#d1cfca": "images/Oversized-drop-shoulder-dirty-washed-white.jpg",
+          "White": "images/Oversized-drop-shoulder-dirty-washed-whitee.jpg"
+        },
+        "image": "images/Oversized-drop-shoulder-dirty-washed-main.jpg"
+      },
+      {
+        "id": 22,
+        "name": "Low ankle women's sneakers",
+        "category": "womens shoes sneakers", 
+        "price": 85,
+        "sizes": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        "colors": ["#3e424f", "#937e73", "#5c3b2d", "#7293a1", "#e94977", "#755159", "#862521", "#bc8d6e", "#37493f", "#2c272b", "#e4d4d7", "#989590", "#d3aeca", "#c5c1cf", "#eeacb8", "#e2dcd2"],
+        "color_images": {
+          "#3e424f": "images/Low-ankle-black-powder-black-gray.jpg",
+          "#937e73": "images/Low-ankle-black-powder-brown.jpg",
+          "#5c3b2d": "images/Low-ankle-black-powder-chocolate.jpg",
+          "#7293a1": "images/Low-ankle-black-powder-denim-patchwork.jpg",
+          "#e94977": "images/Low-ankle-black-powder-double-hook.jpg",
+          "#755159": "images/Low-ankle-black-powder-dunk-cherry.jpg",
+          "#862521": "images/Low-ankle-black-powder-gray-red.jpg",
+          "#bc8d6e": "images/Low-ankle-black-powder-gray-yellow.jpg",
+          "#37493f": "images/Low-ankle-black-powder-Green.jpg",
+          "#2c272b": "images/Low-ankle-black-powder-haze-gray.png",
+          "#e4d4d7": "images/Low-ankle-black-powder-light-pink.jpg",
+          "#989590": "images/Low-ankle-black-powder-orine-gray.jpg",
+          "#d3aeca": "images/Low-ankle-black-powder-pink.jpg",
+          "#c5c1cf": "images/Low-ankle-black-powder-purple.jpg",
+          "#eeacb8": "images/Low-ankle-black-powder-white-powder.jpg",
+          "#e2dcd2": "images/Low-ankle-black-powder-white-yellow.jpg"
+        },
+        "image": "images/Low-ankle-black-powder-Main.jpg"
+      },      
+      {
+        "id": 23,
+        "name": "High-top men's sneaker",
+        "category": "mens shoes sneakers", 
+        "price": 55,
+        "sizes": ["EUR 36", "EUR 37", "EUR 38", "EUR 39", "EUR 40", "EUR 41", "EUR 42", "EUR 43", "EUR 44", "EUR 45"],
+        "colors": ["#437ba3", "#6ab1d7", "#a08e75", "#95c1c3", "#42a2cd", "#e73950", "#2b5380", "#212e37", "#38c4a9", "#00917b", "#6dbce2", "#50628b", "#cccfd0", "#c5c1cf", "#0066c2", "#e2dcd2",
+                  "#ff7d58", "#7c685f", "#bfc8d2", "Black", "#296090"],
+        "color_images": {
+          "#437ba3": "images/High-top-sneaker-1.jpg",
+          "#6ab1d7": "images/High-top-sneaker-2.jpg",
+          "#a08e75": "images/High-top-sneaker-3.jpg",
+          "#95c1c3": "images/High-top-sneaker-4.jpg",
+          "#42a2cd": "images/High-top-sneaker-5.jpg",
+          "#e73950": "images/High-top-sneaker-6.jpg",
+          "#2b5380": "images/High-top-sneaker-7.jpg",
+          "#212e37": "images/High-top-sneaker-8.jpg",
+          "#38c4a9": "images/High-top-sneaker-9.jpg",
+          "#00917b": "images/High-top-sneaker-10.jpg",
+          "#6dbce2": "images/High-top-sneaker-11.jpg",
+          "#50628b": "images/High-top-sneaker-12.jpg",
+          "#cccfd0": "images/High-top-sneaker-13.jpg",
+          "#c5c1cf": "images/High-top-sneaker-14.jpg",
+          "#0066c2": "images/High-top-sneaker-15.jpg",
+          "#e2dcd2": "images/High-top-sneaker-16.jpg",
+          "#ff7d58": "images/High-top-sneaker-17.jpg",
+          "#7c685f": "images/High-top-sneaker-18.jpg",
+          "#bfc8d2": "images/High-top-sneaker-19.jpg",
+          "Black": "images/High-top-sneaker-20.jpg",
+          "#296090": "images/High-top-sneaker-21.jpg"
+        },
+        "image": "images/High-top-sneaker-1.jpg"
+      },
+      {
+        "id": 24,
+        "name": "High top non-slippery fleeced lined water/snow proof womens winter boots",
+        "category": "womens shoes winter-boots", 
+        "price": 50,
+        "sizes": [36, 37, 38, 39, 40, 41],
+        "colors": ["White", "Black"],
+        "color_images": {
+          "White": "images/Womens=winter-boots-white.jpg",
+          "Black": "images/Womens=winter-boots-black.jpg"
+        },
+        "image": "images/Womens=winter-boots-black.jpg"
       }
   ]
-  

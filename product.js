@@ -5,7 +5,7 @@ async function loadProduct() {
 
   try {
     // Fetch product data from the backend API
-    const response = await fetch(`http://localhost:5000/api/products/${productId}`);
+    const response = await fetch(`https://your-backend-service-name.onrender.com/api/products/${productId}`);
     const product = await response.json();
 
     if (!product || product.error) {
@@ -15,7 +15,7 @@ async function loadProduct() {
 
     // Populate product details
     document.getElementById("product-image").innerHTML = `
-    <img src="http://localhost:5000${product.image}" alt="${product.name}" style="width:300px; height:auto; border-radius: 8px;">
+    <img src="https://your-backend-service-name.onrender.com${product.image}" alt="${product.name}" style="width:300px; height:auto; border-radius: 8px;">
 
     `;
     document.getElementById("product-name").textContent = product.name;
@@ -73,7 +73,7 @@ async function loadProduct() {
 function updateProductImage(product, selectedColor) {
   if (product.color_images && product.color_images[selectedColor]) {
     document.getElementById("product-image").innerHTML = `
-    <img src="http://localhost:5000${product.image}" alt="${product.name}" style="width:300px; height:auto; border-radius: 8px;">
+    <img src="https://your-backend-service-name.onrender.com${product.image}" alt="${product.name}" style="width:300px; height:auto; border-radius: 8px;">
 
     `;
   }

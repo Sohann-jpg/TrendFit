@@ -18,7 +18,7 @@ const filters = document.querySelectorAll(".filter");
 // Fetch product data from the backend API
 async function fetchProducts() {
   try {
-    const response = await fetch("http://localhost:5000/api/products"); // Fetch from backend
+    const response = await fetch("https://your-backend-service-name.onrender.com/api/products"); // Fetch from backend
     products = await response.json(); // Store fetched products in the global array
 
     renderProducts(products); // Render all products initially
@@ -42,7 +42,7 @@ function renderProducts(filteredProducts) {
     productDiv.classList.add("product");
     productDiv.innerHTML = `
       <a href="product.html?id=${product._id}" style="text-decoration: none; color: inherit;">
-      <img src="http://localhost:5000${product.image}" style="width:100%; height:auto;">
+      <img src="https://your-backend-service-name.onrender.com${product.image}" style="width:100%; height:auto;">
         
         <h2>${product.name}</h2>
         <p>Price: $${product.price}</p>

@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const toggleButton = document.getElementById("filter-toggle");
-    const filterContent = document.getElementById("filter-content");
-  
-    // Toggle visibility on button click
-    toggleButton.addEventListener("click", () => {
-      filterContent.classList.toggle("open");
-      toggleButton.classList.toggle("open");
-    });
+  const toggleButton = document.getElementById("filter-toggle");
+  const filterContent = document.getElementById("filter-content");
+
+  // Toggle visibility on button click
+  toggleButton.addEventListener("click", () => {
+    filterContent.classList.toggle("open");
+    toggleButton.classList.toggle("open");
   });
+});
 
 let products = []; // Array to hold product data
 
@@ -15,10 +15,10 @@ const productContainer = document.getElementById("products");
 const searchInput = document.getElementById("search");
 const filters = document.querySelectorAll(".filter");
 
-// Fetch product data from JSON file
+// Fetch product data from the backend API
 async function fetchProducts() {
   try {
-    const response = await fetch("products.json");
+    const response = await fetch("http://localhost:5000/api/products"); // Fetch from backend
     products = await response.json(); // Store fetched products in the global array
 
     renderProducts(products); // Render all products initially
@@ -41,8 +41,9 @@ function renderProducts(filteredProducts) {
     const productDiv = document.createElement("div");
     productDiv.classList.add("product");
     productDiv.innerHTML = `
-      <a href="product.html?id=${product.id}" style="text-decoration: none; color: inherit;">
-        <img src="${product.image}" alt="${product.name}" style="width:100%; height:auto;">
+      <a href="product.html?id=${product._id}" style="text-decoration: none; color: inherit;">
+      <img src="http://localhost:5000${product.image}" style="width:100%; height:auto;">
+        
         <h2>${product.name}</h2>
         <p>Price: $${product.price}</p>
       </a>

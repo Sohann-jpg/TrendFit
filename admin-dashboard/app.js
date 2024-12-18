@@ -1,7 +1,9 @@
 const productList = document.getElementById("product-list");
 const addProductForm = document.getElementById("add-product-form");
 
-const API_URL = "http://localhost:5000/api/products";
+const API_URL = "https://trendfit-backend.onrender.com";
+fetch(`${API_URL}`);
+
 
 // Function to upload images
 async function uploadImages(files) {

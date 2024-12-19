@@ -13,7 +13,7 @@ async function uploadImages(files) {
     }
   
     try {
-      const response = await fetch("http://localhost:5000/api/products/upload", {
+      const response = await fetch("https://trendfit-backend.onrender.com/api/products/upload", {
         method: "POST",
         body: formData,
       });
